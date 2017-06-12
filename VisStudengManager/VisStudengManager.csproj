@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{712F8B72-F3C8-4A3E-AD60-692F76652CD4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VisStudengManager</RootNamespace>
+    <AssemblyName>VisStudengManager</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DiyMenuItem, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Asus-cp\Documents\Visual Studio 2015\Projects\DiyMenuItem\DiyMenuItem\bin\Debug\DiyMenuItem.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Plugin_Ab">
+      <HintPath>C:\Users\Asus-cp\Documents\Visual Studio 2015\Projects\Test_DiyMenuItem\Test_DiyMenuItem\bin\Debug\Plugin_Ab.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin_iterface">
+      <HintPath>C:\Users\Asus-cp\Documents\Visual Studio 2015\Projects\Test_DiyMenuItem\Test_DiyMenuItem\bin\Debug\Plugin_iterface.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.104.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SQLite\2015\bin\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Test_DiyMenuItem">
+      <HintPath>C:\Users\Asus-cp\Documents\Visual Studio 2015\Projects\Test_DiyMenuItem\Test_DiyMenuItem\bin\Debug\Test_DiyMenuItem.dll</HintPath>
+    </Reference>
+    <Reference Include="ToolItem_Interface">
+      <HintPath>C:\Users\Asus-cp\Documents\Visual Studio 2015\Projects\Test_DiyMenuItem\Test_DiyMenuItem\bin\Debug\ToolItem_Interface.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Const.cs" />
+    <Compile Include="DataModel\Account.cs" />
+    <Compile Include="Data\DataIterface.cs" />
+    <Compile Include="DataModel\Building.cs" />
+    <Compile Include="DataModel\ClassRoom.cs" />
+    <Compile Include="DataModel\Classes.cs" />
+    <Compile Include="DataModel\ClassRoomBorrow.cs" />
+    <Compile Include="Data\UsersData.cs" />
+    <Compile Include="MemoryData.cs" />
+    <Compile Include="DataModel\Department.cs" />
+    <Compile Include="Data\BuildingData.cs" />
+    <Compile Include="Data\ClassRoomData.cs" />
+    <Compile Include="Data\ClassRoomBorrowData.cs" />
+    <Compile Include="Data\ClassesData.cs" />
+    <Compile Include="Data\DepartmentData.cs" />
+    <Compile Include="Data\StudentData.cs" />
+    <Compile Include="Data\TeacherClassData.cs" />
+    <Compile Include="Data\TeachersData.cs" />
+    <Compile Include="DIsplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DIsplay.Designer.cs">
+      <DependentUpon>DIsplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enter.Designer.cs">
+      <DependentUpon>Enter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query.Designer.cs">
+      <DependentUpon>query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Student.cs" />
+    <Compile Include="DataModel\TeacherClass.cs" />
+    <Compile Include="DataModel\Teachers.cs" />
+    <Compile Include="Utils\ActiveUIController.cs" />
+    <Compile Include="Utils\DbOperator.cs" />
+    <Compile Include="Utils\LoginValidater.cs" />
+    <Compile Include="Utils\StrOperator.cs" />
+    <EmbeddedResource Include="Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DIsplay.resx">
+      <DependentUpon>DIsplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enter.resx">
+      <DependentUpon>Enter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query.resx">
+      <DependentUpon>query.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\SplashScreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
